@@ -1,0 +1,5 @@
+export const GONE = 410;
+export const REDIRECT_STATUSES = [301, 302, 303, 307, 308];
+export const SUPPORTED_STATUSES = [...REDIRECT_STATUSES, GONE];
+export const TEMPORARY_STATUSES = [302, 303, 307];
+export const PERMANENT_STATUSES = [301, 308];

@@ -1,0 +1,4 @@
+Address,Status Code,Status,Redirect URL
+https://example.com/a,301,Moved Permanently,https://example.com/b
+https://example.com/b,301,Moved Permanently,https://example.com/c
+https://example.com/home,200,OK,

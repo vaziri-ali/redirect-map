@@ -1,0 +1,52 @@
+{
+  "name": "redirect-map",
+  "version": "1.0.0",
+  "description": "Analyse, simplify and export HTTP redirect maps for Apache, Nginx, Netlify, Cloudflare Pages and Vercel.",
+  "keywords": [
+    "redirects",
+    "301",
+    "seo",
+    "site-migration",
+    "htaccess",
+    "nginx",
+    "netlify",
+    "vercel",
+    "cloudflare-pages"
+  ],
+  "license": "MIT",
+  "author": "Ali Vaziri",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "redirect-map": "./bin/redirect-map.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "coverage": "node --test --experimental-test-coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:browser": "esbuild src/index.js --bundle --format=iife --global-name=RedirectMap --outfile=dist/redirect-map.browser.js",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.3.0"
+  }
+}

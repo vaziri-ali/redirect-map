@@ -1,0 +1,17 @@
+# source, target, status (optional)
+https://example.com/team, /about/team
+/promo, https://example.com/promo
+/old-blog, /blog
+/blog/post-1, /articles/post-1
+/articles/post-1, /articles/seo-guide
+/about-us, /about
+/about, /about-us
+/contact.html, /contact
+/contact.html, /contact-us
+/shop/shoes, /shop/footwear, 302
+/sale?id=12, /offers/12
+/legacy-page, 410
+/careers, http://example.com/jobs
+/news/:slug, /blog/:slug
+/docs/*, /help/$1
+~^/product/(\d+)$, /p/$1
